@@ -1,3 +1,3 @@
 Cryptocurrency manager, school assignment
 
-![alt text](https://imgur.com/bTc26JO)
+![alt text](https://i.imgur.com/bTc26JO.jpg)
