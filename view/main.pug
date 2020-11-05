@@ -1,0 +1,60 @@
+html
+    head
+        style
+            include asset/css/materialize.min.css
+            include asset/css/main.css
+        title= title
+    body
+        include ./header.pug
+
+        div.container
+            div#modal1.modal
+                div.modal-content
+                    h4#modal_header
+                    ul.collection
+                        li.collection-item
+                            b Price(USD):
+                                span#current_price
+                        li.collection-item
+                            b Market Cap:
+                                span#market_cap
+                        li.collection-item
+                            b Volume 24hr (USD):
+                                span#volume
+                        li.collection-item
+                            b Supply:
+                                span#supply
+                    canvas(id="myChart" width="175" height="175")
+                div.modal-footer
+                    a(href="#" class="modal-close waves-effect waves-green btn-flat") Close
+
+            div.col.s12
+                h4 List of cryptocurrencies
+
+            div#progressBar.progress
+                div.indeterminate
+
+            input(placeholder="Filter" id="filter" type="text")
+
+            div.col.full.s12.grey.lighten-5
+                table.striped.responsive-table
+                    thead
+                        tr
+                            th Rank
+                            th.asc Symbol
+                                span#symbol.sortIcon
+                            th.asc Name
+                                span#name.sortIcon
+                            th.asc Market Cap
+                                span#marketCapUsd.sortIcon
+                            th.asc Price (USD)
+                                span#priceUsd.sortIcon
+                            th.asc % 24hr
+                                span#changePercent24Hr.sortIcon
+                            th.asc Actions
+                    tbody#cryptoDiv
+
+        script(src='/asset/js/libs/chart.min.js')
+        script(src='asset/js/libs/materialize.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js')
+        script(src='/asset/js/main.js')

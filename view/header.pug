@@ -1,0 +1,25 @@
+nav
+    div.nav-wrapper.deep-purple.lighten-5
+        a(href="/" class="brand-logo black-text")
+            img(src='asset/img/logo.png' height="55px")
+        a(href="/" data-target="mobile-demo" class="sidenav-trigger")
+            i.material-icons menu
+        ul.right.hide-on-med-and-down
+            li
+                a(class="black-text" href="/" id="overview") Overview
+            li
+                a(class="black-text" href="/portfolio" id="portfolio") Portfolio
+            li
+                a(class="black-text" href="/news" id="news") News
+            li
+                a(class="red-text" href="#" id="logout") Logout
+
+ul.sidenav#mobile-demo
+    li
+        a(class="black-text" href="/" id="overview_mobile") Overview
+    li
+        a(class="black-text" href="/portfolio" id="portfolio_mobile") Portfolio
+    li
+        a(class="black-text" href="/news" id="news_mobile") News
+    li
+        a(class="red-text" href="#" id="logout_mobile") Logout

@@ -1,0 +1,47 @@
+.row {
+    margin-bottom: 0px;
+}
+
+.row .col.full {
+    height: 100vh;
+}
+
+.row.login .input-field > label {
+    font-size: 1.5em;
+}
+
+::placeholder {
+    color: black !important;
+}
+
+.row.login button, .row.login a {
+    width: 100%;
+}
+
+.positivePercentage {
+    color: #00e676;
+}
+
+.negativePercentage {
+    color: #ff1744;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.detailBtn:hover {
+    cursor: pointer;
+}
+
+.asc:hover, .desc:hover {
+    cursor: pointer;
+}
+
+th span {
+    color: #d500f9;
+}
+
+nav .sidenav-trigger i {
+    color: black;
+}

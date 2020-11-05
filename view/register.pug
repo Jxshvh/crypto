@@ -1,0 +1,28 @@
+html
+    head
+        style
+            include asset/css/materialize.min.css
+            include asset/css/main.css
+        title= title
+    body
+        div.row.login
+            div.col.full.s12.l4.deep-purple.lighten-5
+                div.row.section
+                    div.input-field.col.s12
+                        input(placeholder="È-mail address" id="email" type="email" class="validate")
+                        label(class="purple-text" for="email") E-mail
+                    div.input-field.col.s12
+                        input(placeholder="****" id="password" type="password" class="validate")
+                        label(for="password" class="purple-text") Password
+                    div.input-field.col.s12
+                        input(placeholder="****" id="password_confirm" type="password" class="validate")
+                        label(for="password_confirm" class="purple-text") Confirm Password
+                    div.input-field.col.s12
+                        button(class="btn-large waves-effect waves-light purple darken-3" type="submit" id="register") Register
+                    div.col.s12
+                        a(href="/login" class="waves-effect waves-light btn-large deep-purple accent-2") Back to Login
+            div.col.full.l8.s1.grey.lighten-5
+
+        script(src='asset/js/libs/materialize.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js')
+        script(src='/asset/js/register.js')

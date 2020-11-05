@@ -1,0 +1,24 @@
+html
+    head
+        style
+            include asset/css/materialize.min.css
+            include asset/css/main.css
+        title= title
+    body
+        include ./header.pug
+
+        div.container
+            div.col.s12
+                h4 20 Recent Cryptocurrency Articles
+            div.col.full.s12.grey.lighten-5
+                table.col.full.s12.grey.lighten-5
+                    thead
+                        tr
+                            th Title
+                            th Date
+                            th Link
+                    tbody#newsDiv
+
+        script(src='asset/js/libs/materialize.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js')
+        script(src='/asset/js/news.js')
